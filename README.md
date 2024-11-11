@@ -17,4 +17,3 @@ Este repositorio contiene el código base del ecommerce, construido utilizando l
 - **Sistema de búsqueda y filtros**: Los usuarios pueden buscar productos y aplicar filtros por categoría, precio, disponibilidad, etc.
 - **Panel de administración**: Los administradores pueden gestionar productos, pedidos y usuarios desde un panel de control.
 - **Responsivo**: El sitio está optimizado para dispositivos móviles y de escritorio.
-
