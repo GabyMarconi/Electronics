@@ -1,47 +1,47 @@
 use DBVentasElectronica
 go
 INSERT INTO Categorias (Nombre, Descripcion) VALUES 
-('Smartphones', 'TelÈfonos mÛviles de ˙ltima generaciÛn con tecnologÌa avanzada'),
+('Smartphones', 'Tel√©fonos m√≥viles de √∫ltima generaci√≥n con tecnolog√≠a avanzada'),
 ('Laptops', 'Laptops y ultrabooks de diversas marcas para todos los usos'),
 ('Audio', 'Dispositivos de audio, incluyendo auriculares y altavoces'),
-('Televisores', 'Televisores LED, OLED y Smart TVs de alta resoluciÛn'),
-('Accesorios', 'Accesorios electrÛnicos como cables, cargadores, y fundas'),
-('Componentes PC', 'Componentes para computadoras como tarjetas gr·ficas y procesadores'),
+('Televisores', 'Televisores LED, OLED y Smart TVs de alta resoluci√≥n'),
+('Accesorios', 'Accesorios electr√≥nicos como cables, cargadores, y fundas'),
+('Componentes PC', 'Componentes para computadoras como tarjetas gr√°ficas y procesadores'),
 ('Drones', 'Drones de uso recreativo y profesional'),
-('C·maras', 'C·maras digitales y de video, asÌ como accesorios para fotografÌa'),
+('C√°maras', 'C√°maras digitales y de video, as√≠ como accesorios para fotograf√≠a'),
 ('Consolas de Videojuegos', 'Consolas de videojuegos y accesorios'),
-('Smart Home', 'Dispositivos inteligentes para el hogar, como c·maras de seguridad y termostatos');
+('Smart Home', 'Dispositivos inteligentes para el hogar, como c√°maras de seguridad y termostatos');
 go
 INSERT INTO Proveedores (Nombre, ContactoNombre, Telefono, CorreoElectronico, Direccion) VALUES 
-('Distribuidora Tech', 'Juan PÈrez', '123456789', 'contacto@tech.com', 'Av. Siempre Viva 123, Lima'),
-('Hogar y M·s', 'Ana DÌaz', '987654321', 'contacto@hogarymas.com', 'Calle Principal 456, Cusco'),
-('Computronix', 'Carlos GÛmez', '654321987', 'ventas@computronix.com', 'Av. Inform·tica 321, Arequipa'),
+('Distribuidora Tech', 'Juan P√©rez', '123456789', 'contacto@tech.com', 'Av. Siempre Viva 123, Lima'),
+('Hogar y M√°s', 'Ana D√≠az', '987654321', 'contacto@hogarymas.com', 'Calle Principal 456, Cusco'),
+('Computronix', 'Carlos G√≥mez', '654321987', 'ventas@computronix.com', 'Av. Inform√°tica 321, Arequipa'),
 ('Juguetelandia', 'Rosa Quintana', '789123456', 'contacto@juguetelandia.com', 'Calle Juguete 567, Cusco'),
-('CosmÈtica Bella', 'Marta Sarmiento', '987321654', 'info@cosmeticabella.com', 'Av. Belleza 456, Lima'),
+('Cosm√©tica Bella', 'Marta Sarmiento', '987321654', 'info@cosmeticabella.com', 'Av. Belleza 456, Lima'),
 ('Sporting', 'Luis Ramos', '321654987', 'contacto@sporting.com', 'Calle Deporte 987, Lima'),
-('FashionTrendy', 'Carla LÛpez', '741258963', 'ventas@fashiontrendy.com', 'Av. Moda 123, Cusco'),
-('Zapatos y M·s', 'Jorge MartÌnez', '852963741', 'contacto@zapatosymas.com', 'Calle Calzado 456, Lima'),
-('LibrerÌa Mundial', 'Patricia Torres', '963852741', 'contacto@libreriamundial.com', 'Av. Letras 789, Arequipa'),
-('MueblerÌa Moderna', 'Ra˙l Contreras', '159357246', 'contacto@muebleriaderna.com', 'Av. Muebles 951, Lima');
+('FashionTrendy', 'Carla L√≥pez', '741258963', 'ventas@fashiontrendy.com', 'Av. Moda 123, Cusco'),
+('Zapatos y M√°s', 'Jorge Mart√≠nez', '852963741', 'contacto@zapatosymas.com', 'Calle Calzado 456, Lima'),
+('Librer√≠a Mundial', 'Patricia Torres', '963852741', 'contacto@libreriamundial.com', 'Av. Letras 789, Arequipa'),
+('Muebler√≠a Moderna', 'Ra√∫l Contreras', '159357246', 'contacto@muebleriaderna.com', 'Av. Muebles 951, Lima');
 go
 
 INSERT INTO Productos (Nombre, Descripcion, Precio, Stock, Imagen, CategoriaID, ProveedorID) VALUES 
-('Smartphone X', 'TelÈfono inteligente con c·mara de alta resoluciÛn', 899.99, 50, 'imagen_smartphone_x.jpg', 11,1),
-('Refrigerador Frost', 'Refrigerador de ˙ltima tecnologÌa con bajo consumo', 1200.00, 15, 'imagen_refrigerador.jpg', 12, 2),
-('Laptop Pro', 'Laptop de alto rendimiento para profesionales', 1500.00, 25, 'imagen_laptop_pro.jpg', 13, 3),
-('Robot de Juguete', 'Robot educativo para niÒos', 79.99, 100, 'imagen_robot_juguete.jpg', 14, 4),
-('Crema Facial', 'Crema para el cuidado facial de alta calidad', 25.50, 200, 'imagen_crema_facial.jpg', 15, 5),
-('Bicicleta de MontaÒa', 'Bicicleta todo terreno de alta durabilidad', 350.00, 30, 'imagen_bicicleta_montaÒa.jpg', 16, 6),
-('Chaqueta de Cuero', 'Chaqueta de cuero para hombre', 120.00, 40, 'imagen_chaqueta_cuero.jpg', 17, 7),
-('Zapatillas Deportivas', 'Zapatillas para correr de alta calidad', 75.00, 80, 'imagen_zapatillas.jpg', 18, 8),
-('Libro de Ciencia', 'Libro sobre teorÌas cientÌficas', 19.99, 150, 'imagen_libro_ciencia.jpg', 19, 9),
-('Sof· Moderno', 'Sof· moderno de tres plazas', 500.00, 10, 'imagen_sofa_moderno.jpg', 20, 10);
+('Smartphone X', 'Tel√©fono inteligente con c√°mara de alta resoluci√≥n', 899.99, 50, 'imagen_smartphone_x.jpg', 1,1),
+('Refrigerador Frost', 'Refrigerador de √∫ltima tecnolog√≠a con bajo consumo', 1200.00, 15, 'imagen_refrigerador.jpg', 2, 2),
+('Laptop Pro', 'Laptop de alto rendimiento para profesionales', 1500.00, 25, 'imagen_laptop_pro.jpg', 3, 3),
+('Robot de Juguete', 'Robot educativo para ni√±os', 79.99, 100, 'imagen_robot_juguete.jpg', 4, 4),
+('Crema Facial', 'Crema para el cuidado facial de alta calidad', 25.50, 200, 'imagen_crema_facial.jpg', 5, 5),
+('Bicicleta de Monta√±a', 'Bicicleta todo terreno de alta durabilidad', 350.00, 30, 'imagen_bicicleta_monta√±a.jpg', 6, 6),
+('Chaqueta de Cuero', 'Chaqueta de cuero para hombre', 120.00, 40, 'imagen_chaqueta_cuero.jpg', 7, 7),
+('Zapatillas Deportivas', 'Zapatillas para correr de alta calidad', 75.00, 80, 'imagen_zapatillas.jpg', 8, 8),
+('Libro de Ciencia', 'Libro sobre teor√≠as cient√≠ficas', 19.99, 150, 'imagen_libro_ciencia.jpg', 9, 9),
+('Sof√° Moderno', 'Sof√° moderno de tres plazas', 500.00, 10, 'imagen_sofa_moderno.jpg', 10, 10);
 go
 INSERT INTO Clientes (Nombre, Apellido, CorreoElectronico, Telefono, Direccion) VALUES 
 ('Jorge', 'Lopez', 'jorge.lopez@mail.com', '123456789', 'Av. Central 123, Lima'),
 ('Ana', 'Perez', 'ana.perez@mail.com', '987654321', 'Calle Nueva 456, Cusco'),
 ('Luis', 'Gonzalez', 'luis.gonzalez@mail.com', '654321987', 'Av. Libertad 789, Arequipa'),
-('Maria', 'Diaz', 'maria.diaz@mail.com', '789123456', 'Jr. UniÛn 321, Cusco'),
+('Maria', 'Diaz', 'maria.diaz@mail.com', '789123456', 'Jr. Uni√≥n 321, Cusco'),
 ('Carlos', 'Ramirez', 'carlos.ramirez@mail.com', '321654987', 'Av. Principal 987, Lima'),
 ('Lucia', 'Flores', 'lucia.flores@mail.com', '741258963', 'Calle Independencia 654, Cusco'),
 ('Pedro', 'Torres', 'pedro.torres@mail.com', '852963741', 'Av. Futuro 456, Lima'),
